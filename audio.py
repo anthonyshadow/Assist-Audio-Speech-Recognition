@@ -39,13 +39,13 @@ cmd = Commander()
 def initSpeech():
     print("Listening...")
 
-    play_audio("./audio/audio_initiate.wav")
+    play_audio("./audio_initiate.wav")
 
     with sr.Microphone() as source:
         print("Say Something")
         audio = r.listen(source)
 
-    play_audio("./audio/audio_end.wav")
+    play_audio("./audio_end.wav")
 
     command = ""
 
